@@ -12,6 +12,7 @@
 		402EB57C1E755B47007CCCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402EB57A1E755B47007CCCFD /* Main.storyboard */; };
 		402EB57E1E755B47007CCCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402EB57D1E755B47007CCCFD /* Assets.xcassets */; };
 		402EB5811E755B47007CCCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402EB57F1E755B47007CCCFD /* LaunchScreen.storyboard */; };
+		402EB58A1E755BFF007CCCFD /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402EB5891E755BFF007CCCFD /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		402EB57D1E755B47007CCCFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		402EB5801E755B47007CCCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		402EB5821E755B47007CCCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402EB5891E755BFF007CCCFD /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		402EB5751E755B47007CCCFD /* Faceit */ = {
 			isa = PBXGroup;
 			children = (
-				402EB5761E755B47007CCCFD /* AppDelegate.swift */,
+				402EB5881E755BA3007CCCFD /* Supporting Files */,
 				402EB5781E755B47007CCCFD /* ViewController.swift */,
+				402EB5891E755BFF007CCCFD /* FaceView.swift */,
 				402EB57A1E755B47007CCCFD /* Main.storyboard */,
+			);
+			path = Faceit;
+			sourceTree = "<group>";
+		};
+		402EB5881E755BA3007CCCFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				402EB5761E755B47007CCCFD /* AppDelegate.swift */,
 				402EB57D1E755B47007CCCFD /* Assets.xcassets */,
 				402EB57F1E755B47007CCCFD /* LaunchScreen.storyboard */,
 				402EB5821E755B47007CCCFD /* Info.plist */,
 			);
-			path = Faceit;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				402EB5791E755B47007CCCFD /* ViewController.swift in Sources */,
 				402EB5771E755B47007CCCFD /* AppDelegate.swift in Sources */,
+				402EB58A1E755BFF007CCCFD /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
