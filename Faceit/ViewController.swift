@@ -34,15 +34,15 @@ class ViewController: UIViewController
         }
     }
     
-    func increaseHappiness() {
+    @objc func increaseHappiness() {
         expression = expression.happier
     }
     
-    func decreaseHappiness() {
+    @objc func decreaseHappiness() {
         expression = expression.sadder
     }
     
-    func toggleEyes(byReactingTo tapRecognizer: UITapGestureRecognizer) {
+    @objc func toggleEyes(byReactingTo tapRecognizer: UITapGestureRecognizer) {
         if (tapRecognizer.state == UIGestureRecognizerState.ended) {
             let eyes: FacialExpression.Eyes = (expression.eyes == .closed) ? .open : .closed
             expression = FacialExpression(eyes: eyes, mouth: expression.mouth)

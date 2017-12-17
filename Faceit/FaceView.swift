@@ -28,7 +28,7 @@ class FaceView: UIView {
     @IBInspectable
     var color: UIColor = UIColor.blue { didSet { setNeedsDisplay() } }
     
-    func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer) {
+    @objc func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer) {
         switch pinchRecognizer.state {
         case .changed, .ended:
             scale *= pinchRecognizer.scale
@@ -61,8 +61,8 @@ class FaceView: UIView {
         case right
     }
     
-    private func pathForEye(_ eye: Eye) ->  UIBezierPath {
-        func centerOfEye(_ eye: Eye) ->CGPoint {
+    private func pathForEye(_ eye: Eye) -> UIBezierPath {
+        func centerOfEye(_ eye: Eye) -> CGPoint {
             let eyeOffset = skullRadius / Ratios.skullRadiusToEyeOffset
             var eyeCenter = skullCenter
             eyeCenter.y -= eyeOffset
@@ -122,5 +122,4 @@ class FaceView: UIView {
         pathForEye(.right).stroke()
         pathForMouth().stroke()
     }
-    
 }
