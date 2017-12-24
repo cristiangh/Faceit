@@ -9,9 +9,9 @@
 import UIKit
 
 @IBDesignable
-class FaceView: UIView {
-
-    // Public API
+class FaceView: UIView
+{
+    // MARK: Public API
     
     @IBInspectable
     var mouthCurvature: Double = 0.5 { didSet { setNeedsDisplay() } }
@@ -38,7 +38,7 @@ class FaceView: UIView {
         }
     }
     
-    // Private Implementation
+    // MARK: Private Implementation
     
     private struct Ratios {
         static let skullRadiusToEyeOffset: CGFloat = 3
